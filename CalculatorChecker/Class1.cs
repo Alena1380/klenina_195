@@ -1,4 +1,4 @@
-sing System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,44 +8,44 @@ namespace calculator
 {
     public class CalculatorChecker
     {
-        public static double ValidateCalculator(double sum1, double sum2, string operation)
+        public static double ValidateCalculator(double a, double b, string oper)
         {
-            if (operation == "+")
+            if (oper == "+")
             {
-                return (sum1 + sum2);
+                return (a + b);
             }
 
-            if (operation == "-")
+            if (oper == "-")
             {
-                return sum1 - sum2;
+                return a - b;
 
             }
-            if (operation == "*")
+            if (oper == "*")
             {
-                return (sum1 * sum2);
+                return (a * b);
 
             }
-            if (operation == "/")
+            if (oper == "/")
             {
-                if (sum2 == 0.0D)
+                if (b == 0.0D)
                 {
                     throw new DivideByZeroException();
 
 
                 }
-                return (sum1 / sum2);
+                return (a / b);
                 try
                 {
 
 
-                    if (sum2 == 0)
+                    if (b == 0)
                     {
                         Console.WriteLine("Вы не можете делить на ноль ");
 
                         return 1;
                     }
                     else
-                        Console.WriteLine("Результат :" + " " + sum1 / sum2);
+                        Console.WriteLine("Результат :" + " " + a / b);
 
                 }
                 catch
