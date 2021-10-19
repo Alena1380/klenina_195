@@ -2,9 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using calculator;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace calculator.Tests
 {
@@ -71,9 +69,6 @@ namespace calculator.Tests
             double actual = CalculatorChecker.ValidateCalculator(a, b, operation);
 
         }
-
-
-
 
     }
 }
